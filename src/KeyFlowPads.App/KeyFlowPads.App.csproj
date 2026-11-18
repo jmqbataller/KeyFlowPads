@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>../../assets/branding/KeyFlowPads-Icon.ico</ApplicationIcon>
+    <AssemblyName>KeyFlowPads</AssemblyName>
+    <Product>KeyFlow Pads</Product>
+    <Description>Continuous worship pad playback for Windows</Description>
+    <Version>1.3.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="KeyFlowPads.WebChecks" />
+    <ProjectReference Include="../KeyFlowPads.Audio/KeyFlowPads.Audio.csproj" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4314.35" />
+    <Content Include="../../assets/audio/*" Link="audio/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../assets/fonts/*" Link="fonts/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <EmbeddedResource Include="../../assets/branding/KeyFlowPads-Icon.ico" LogicalName="KeyFlowPads.Icon" />
+    <EmbeddedResource Include="../../assets/branding/KeyFlowPads-Icon-128.png" LogicalName="KeyFlowPads.Mark" />
+  </ItemGroup>
+  <Target Name="RemoveUnusedWebView2WpfReference" BeforeTargets="ResolveAssemblyReferences">
+    <ItemGroup>
+      <Reference Remove="@(Reference)" Condition="'%(Reference.Filename)' == 'Microsoft.Web.WebView2.Wpf'" />
+    </ItemGroup>
+  </Target>
+</Project>

@@ -1,0 +1,18 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 243 64' role='img' aria-label='KeyFlow Pads'>
+  <rect width='64' height='64' rx='16' fill='#10141D'/>
+  <rect x='9' y='14' width='10' height='10' rx='2.5' fill='#F8FAFC'/>
+  <rect x='21' y='14' width='10' height='10' rx='2.5' fill='#F8FAFC'/>
+  <rect x='33' y='14' width='10' height='10' rx='2.5' fill='#F8FAFC'/>
+  <rect x='45' y='14' width='10' height='10' rx='2.5' fill='#F8FAFC'/>
+  <rect x='9' y='27' width='10' height='10' rx='2.5' fill='#F8FAFC'/>
+  <rect x='21' y='27' width='10' height='10' rx='2.5' fill='#F8FAFC'/>
+  <rect x='33' y='27' width='10' height='10' rx='2.5' fill='#F8FAFC'/>
+  <rect x='45' y='27' width='10' height='10' rx='2.5' fill='#F8FAFC'/>
+  <rect x='9' y='40' width='10' height='10' rx='2.5' fill='#F8FAFC'/>
+  <rect x='21' y='40' width='10' height='10' rx='2.5' fill='#F8FAFC'/>
+  <rect x='33' y='40' width='10' height='10' rx='2.5' fill='#F8FAFC'/>
+  <rect x='45' y='40' width='10' height='10' rx='2.5' fill='#F8FAFC'/>
+  <path d='M12 37 C22 40 25 42 33 36 C40 31 43 25 52 27' fill='none' stroke='#10141D' stroke-width='6.5' stroke-linecap='round'/>
+  <path d='M12 37 C22 40 25 42 33 36 C40 31 43 25 52 27' fill='none' stroke='#F8FAFC' stroke-width='2.7' stroke-linecap='round'/>
+  <text x='77' y='42' font-family='Inter, sans-serif' font-size='25' font-weight='700' fill='#10141D'>KeyFlow Pads</text>
+</svg>
